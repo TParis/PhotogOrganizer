@@ -42,7 +42,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <body class="home">
     <header>
         <div class="header-image">
-            <?= $this->Html->image('http://cakephp.org/img/logo-cake.png') ?>
+            <?= $this->Html->image('http://cakephp.org/img/cake-logo.png') ?>
             <h1>Get the Ovens Ready</h1>
         </div>
     </header>
@@ -65,9 +65,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             <div class="columns large-12 checks">
                 <h4>Environment</h4>
                 <?php if (version_compare(PHP_VERSION, '5.5.9', '>=')): ?>
-                    <p class="success">Your version of PHP is 5.5.9 or higher (detected <?= PHP_VERSION ?>).</p>
+                    <p class="success">Your version of PHP is 5.5.9 or higher (detected <?= phpversion() ?>).</p>
                 <?php else: ?>
-                    <p class="problem">Your version of PHP is too low. You need PHP 5.5.9 or higher to use CakePHP (detected <?= PHP_VERSION ?>).</p>
+                    <p class="problem">Your version of PHP is too low. You need PHP 5.5.9 or higher to use CakePHP (detected <?= phpversion() ?>).</p>
                 <?php endif; ?>
 
                 <?php if (extension_loaded('mbstring')): ?>
@@ -183,10 +183,6 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
                     <li>
                         <a href="https://github.com/cakephp/cakephp/issues">CakePHP Issues</a>
                         <ul><li>CakePHP issues and pull requests</li></ul>
-                    </li>
-                    <li>
-                        <a href="http://discourse.cakephp.org/">CakePHP Forum</a>
-                        <ul><li>CakePHP official discussion forum</li></ul>
                     </li>
                     <li>
                         <a href="https://groups.google.com/group/cake-php">CakePHP Google Group</a>
