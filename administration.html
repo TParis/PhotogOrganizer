@@ -137,6 +137,8 @@
 												];
 												var ordersGraph = jQuery.jqplot ('ordersGraph', [data],
 														{
+															seriesColors: [ "#4bb2c5", "#c5b47f", "#EAA228", "#579575", "#839557", "#958c12",
+																"#953579", "#4b5de4", "#d8b83f", "#ff5800", "#0085cc", "#f7a86b"],
 															seriesDefaults: {
 																// Make this a pie chart.
 																renderer: jQuery.jqplot.PieRenderer,
@@ -146,13 +148,14 @@
 																	showDataLabels: true
 																}
 															},
+															animate: true,
 															legend: { show:false, location: 'e' }
 														}
 												);
 											});
 										</script>
 
-										<div id="ordersGraph" style="height:300px; width:500px;"></div>
+										<div id="ordersGraph" style="height:300px; width:300px;"></div>
 
 
 									</div>
