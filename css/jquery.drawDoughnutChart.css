@@ -6,12 +6,12 @@ body {
     font-family: "Oswald", sans-serif;*/
 }
 .chart {
-    position: absolute;
+    /*position: absolute;*/
     width: 300px;
     height: 300%;
-    top: 50%;
-    left: 50%;
-    margin: -225px;
+    /*top: 50%;
+    left: 50%;*/
+    margin: auto;
 }
 .doughnutTip {
     position: absolute;
@@ -51,6 +51,8 @@ body {
     text-align: center;
     text-shadow: 0 -1px 0 #111;
     cursor: default;
+    margin-left: -70px;
+    margin-top: -70px;
 }
 .doughnutSummaryTitle {
     position: absolute;
