@@ -6,14 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.responsive.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.drawDoughnutChart.css.css">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/toolkit.min.js"></script>
-		<script type="text/javascript" src="js/jquery.jqplot.js"></script>
-		<script type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
+		<script type="text/javascript" src="js/jquery.drawDoughnutChart.js"></script>
 
 		<script type="text/javascript">
       
@@ -127,37 +126,24 @@
 										<h3 class="panel-title">12 mo Orders</h3>
 									</div>
 									<div class="panel-body">
-										<script class="code" type="text/javascript">
-											$(document).ready(function(){
-												var data = [
-													['January', 12],['February', 9], ['March', 14],
-													['April', 16],['May', 7], ['June', 9],
-													['July', 16],['August', 7], ['September', 9],
-													['October', 16],['November', 16],['December', 16]
-												];
-												var ordersGraph = jQuery.jqplot ('ordersGraph', [data],
-														{
-															seriesColors: [ "#4bb2c5", "#c5b47f", "#EAA228", "#579575", "#839557", "#958c12",
-																"#953579", "#4b5de4", "#d8b83f", "#ff5800", "#0085cc", "#f7a86b"],
-															seriesDefaults: {
-																// Make this a pie chart.
-																renderer: jQuery.jqplot.PieRenderer,
-																rendererOptions: {
-																	// Put data labels on the pie slices.
-																	// By default, labels show the percentage of the slice.
-																	showDataLabels: true
-																}
-															},
-															animate: true,
-															legend: { show:false, location: 'e' }
-														}
-												);
+										<script type="text/javascript">
+											$(function(){
+												$("#doughnutChart").drawDoughnutChart([
+													{ title: "January",         value : 12,  color: "#2C3E50" },
+													{ title: "February", 		value:  22,   color: "#FC4349" },
+													{ title: "March",      		value:  4,   color: "#6DBCDB" },
+													{ title: "April",        	value : 10,   color: "#F7E248" },
+													{ title: "May",        		value : 16,   color: "#D7DADB" },
+													{ title: "June",        	value : 21,   color: "#4D2867" },
+													{ title: "July",        	value : 3,   color: "#502348" },
+													{ title: "August",        	value : 5,   color: "#902A2B" },
+													{ title: "September",       value : 36,   color: "#9B4624" },
+													{ title: "October",        	value : 45,   color: "#253E5D" },
+													{ title: "November",        value : 32,   color: "#3B6E83" },
+													{ title: "December",        value : 18,   color: "#7BA9B6" },
+												]);
 											});
 										</script>
-
-										<div id="ordersGraph" style="height:300px; width:300px;"></div>
-
-
 									</div>
 								</div>
 							</div>
