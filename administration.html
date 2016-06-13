@@ -114,9 +114,27 @@
 							<div class="col-md-4">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										<h3 class="panel-title">Visitors</h3>
+										<h3 class="panel-title">Visitors by Photoshoot</h3>
 									</div>
 									<div class="panel-body">
+										<script type="text/javascript">
+											$(function(){
+												$("#visitorChart").drawDoughnutChart([
+													{ title: "Johnsen Photoshoot",         	value : 24,  color: "#2C3E50" },
+													{ title: "Parker Photoshoot", 			value:  19,   color: "#FC4349" },
+													{ title: "Smalls Photoshoot",      		value:  239,   color: "#6DBCDB" },
+													{ title: "Jones Photoshoot",        	value : 120,   color: "#F7E248" },
+													{ title: "Mavericks Photoshoot",        value : 140,   color: "#D7DADB" },
+													{ title: "Pahu Photoshoot",        		value : 89,   color: "#4D2867" },
+													{ title: "Taylor Photoshoot",        	value : 302,   color: "#502348" },
+													{ title: "McDaniels Photoshoot",        value : 60,   color: "#902A2B" },
+													{ title: "Griffan Photoshoot",       	value : 90,   color: "#9B4624" },
+													{ title: "Simpson Photoshoot",        	value : 149,   color: "#253E5D" }
+												]);
+											});
+										</script>
+										<div id="visitorChart" class="chart"></div>
+										<div style="clear: both"></div>
 									</div>
 								</div>
 							</div>
