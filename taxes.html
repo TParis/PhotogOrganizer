@@ -29,6 +29,15 @@
          });
          });*/
 
+        $(document).ready(function() {
+
+            $("#add-expense").click(function() {
+
+                $("#add-expense-modal").modal("show")
+
+            })
+        });
+
     </script>
 </head>
 <body>
@@ -70,7 +79,7 @@
     <article>
         <div class="container-fluid">
             <div class="col-md-12">
-                <h1>Statistics</h1>
+                <h1>Tax Center</h1>
                 <ol class="breadcrumb">
                     <li><a href="#">Admin CP</a></li>
                     <li><a href="#">Taxes</a></li>
@@ -212,12 +221,14 @@
                 <div class="col-md-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
+                            <button class="btn btn-default pull-right" id="add-expense">Add Expense</button>
                             <h3 class="panel-title">Business Expenses</h3>
+                            <div class="clearfix"></div>
                         </div>
                         <table class="table table-default table-responsive table-striped">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
+                                    <th colspan="2">Date</th>
                                     <th>Expense</th>
                                     <th>Category</th>
                                     <th>Cost</th>
@@ -225,36 +236,42 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>June 6, 2016</td>
                                     <td>Print Order</td>
                                     <td>Professional Services</td>
                                     <td>$110.00</td>
                                 </tr>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>June 6, 2016</td>
                                     <td>Website 1/yr</td>
                                     <td>Marketing</td>
                                     <td>$110.00</td>
                                 </tr>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>May 5, 2016</td>
                                     <td>Print Order</td>
                                     <td>Professional Services</td>
                                     <td>$50.00</td>
                                 </tr>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>April 27, 2016</td>
                                     <td>Print Order</td>
                                     <td>Professional Services</td>
                                     <td>$10.00</td>
                                 </tr>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>April 3, 2016</td>
                                     <td>Print Order</td>
                                     <td>Professional Services</td>
                                     <td>$140.00</td>
                                 </tr>
                                 <tr>
+                                    <td><img src="img/delete.png" width="30"></td>
                                     <td>April 1, 2016</td>
                                     <td>Sales Tax</td>
                                     <td>Taxes</td>
@@ -316,5 +333,53 @@
         </div>
     </footer>
 </div>
+<div class="modal fade" id="add-expense-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Add Expense</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="expense-date">Date</label>
+                        <input type="text" class="form-control" id="expense-date" placeholder="6/12/2016">
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-exp">Expense</label>
+                        <input type="text" class="form-control" id="expense-exp" placeholder="Expense">
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-cat">Category</label>
+                        <select class="form-control" id="expense-cat">
+                            <option>Caritable Contribs</option>
+                            <option>Equipment</option>
+                            <option>Gifts</option>
+                            <option>Insurance</option>
+                            <option>Maintenance</option>
+                            <option>Marketing</option>
+                            <option>License & Fees</option>
+                            <option>Professional Services</option>
+                            <option>Rent</option>
+                            <option>Travel</option>
+                            <option>Utilities</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="expense-cost">Cost</label>
+                        <input type="text" class="form-control" id="expense-cost" placeholder="$0.00">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
 </html>
