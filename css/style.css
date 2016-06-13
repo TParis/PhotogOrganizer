@@ -189,3 +189,10 @@ tfoot th {
 		padding-bottom: 12px;
 	}
 }
+
+.inc-info {
+	background-color: #d5d5d5;
+	text-align: right;
+	font-weight: bold;
+	font-style: italic;
+}
