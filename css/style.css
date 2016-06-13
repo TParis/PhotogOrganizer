@@ -196,3 +196,11 @@ tfoot th {
 	font-weight: bold;
 	font-style: italic;
 }
+
+body.modal-open-noscroll {
+	margin-right: 0!important;
+	overflow: hidden;
+}
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+	margin-right: 0!important;
+}
