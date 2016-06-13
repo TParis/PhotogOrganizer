@@ -56,3 +56,116 @@ header {
 .table tbody tr td:last-child, .table thead tr th:last-child {
 	text-align: right;
 }
+
+#eventlist  li {
+	font-size: 12px;
+}
+
+tfoot th {
+	text-align: right;
+}
+
+.panel-title {
+	font-weight: bold;
+}
+
+.progress {
+	margin-bottom: 0px;
+}
+
+.session-img {
+	width: 200px;
+	height: 200px;
+	border: 5px #CCC solid;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+.session-img-td {
+	text-align: center !important;
+}
+
+.family-img {
+	width: 150px;
+	height: 150px;
+	border: 5px #CCC solid;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+.family-img-td {
+	text-align: center !important;
+}
+
+.tiny-family-img {
+	width: 50px;
+	height: 50px;
+	border: 5px #CCC solid;
+	border-radius: 50%;
+	padding: 2px;
+	margin-top: -15px;
+}
+
+.family-member-table {
+	border: 3px solid #CCC;
+	border-radius: 50%;
+}
+
+.family-member-table td {
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.panel-profile-img {
+	max-width: 100px;
+	margin-top: -70px;
+	margin-bottom: 5px;
+	border: 3px solid #FFF;
+	border-radius: 100%;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+ 
+.panel-profile .panel-heading {
+	height: 150px;
+	background-size: cover;
+}
+
+.consult-notes {
+	height: 100px;
+	width: 100%;
+	clear: both;
+}
+
+.consult-question-area {
+	height: 300px !important;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.family-bars {
+	margin-right: 0px !important;
+}
+
+.width-150 {
+	width: 150px;
+}
+
+.no-gutter {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.paid {
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
