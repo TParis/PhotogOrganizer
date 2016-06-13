@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.responsive.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css.">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -135,7 +135,7 @@
 													['July', 16],['August', 7], ['September', 9],
 													['October', 16],['November', 16],['December', 16]
 												];
-												var ordersGraph = jQuery.jqplot ('chart1', [data],
+												var ordersGraph = jQuery.jqplot ('ordersGraph', [data],
 														{
 															seriesDefaults: {
 																// Make this a pie chart.
@@ -151,6 +151,9 @@
 												);
 											});
 										</script>
+
+										<div id="ordersGraph" style="height:300px; width:500px;"></div>
+
 
 									</div>
 								</div>
