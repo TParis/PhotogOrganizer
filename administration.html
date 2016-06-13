@@ -6,11 +6,15 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.responsive.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css.">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/toolkit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jqplot.js."></script>
+		<script type="text/javascript" src="js/plugins/jqplot.pieRenderer.min.js"></script>
+
 		<script type="text/javascript">
       
 			/*$(window).scroll(function() {
@@ -114,7 +118,6 @@
 										<h3 class="panel-title">Visitors</h3>
 									</div>
 									<div class="panel-body">
-
 									</div>
 								</div>
 							</div>
@@ -124,6 +127,30 @@
 										<h3 class="panel-title">12 mo Orders</h3>
 									</div>
 									<div class="panel-body">
+										<script class="code" type="text/javascript">
+											$(document).ready(function(){
+												var data = [
+													['January', 12],['February', 9], ['March', 14],
+													['April', 16],['May', 7], ['June', 9],
+													['July', 16],['August', 7], ['September', 9],
+													['October', 16],['November', 16],['December', 16]
+												];
+												var ordersGraph = jQuery.jqplot ('chart1', [data],
+														{
+															seriesDefaults: {
+																// Make this a pie chart.
+																renderer: jQuery.jqplot.PieRenderer,
+																rendererOptions: {
+																	// Put data labels on the pie slices.
+																	// By default, labels show the percentage of the slice.
+																	showDataLabels: true
+																}
+															},
+															legend: { show:false, location: 'e' }
+														}
+												);
+											});
+										</script>
 
 									</div>
 								</div>
