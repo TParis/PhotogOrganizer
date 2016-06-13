@@ -200,7 +200,9 @@ tfoot th {
 body.modal-open-noscroll {
 	margin-right: 0 !important;
 	overflow: hidden;
+	padding-right: 0px !important;
 }
 .modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
 	margin-right: 0 !important;
+	padding-right: 0px !important;
 }
