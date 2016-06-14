@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Photographer's Organizer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.drawDoughnutChart.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/toolkit.min.js"></script>
+    <script type="text/javascript" src="js/jquery.drawDoughnutChart.js"></script>
+
+    <script type="text/javascript">
+
+        /*$(window).scroll(function() {
+         if ($(document).scrollTop() > 50) {
+         $('nav').addClass('shrink').addClass('navbar-fixed-top').removeClass('navbar-center');
+         } else {
+         $('nav').removeClass('shrink').removeClass('navbar-fixed-top').addClass('navbar-center');
+         }
+         });
+         $(document).ready(function() {
+         $(".list-group-item").click(function() {
+         window.location = "appeal.html?id=" + $(this).attr("id");
+         });
+         });*/
+
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="container-fluid">
+            <h1>The Photographer's Organizer</h1>
+        </div>
+    </header>
+    <nav role="navigation" class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="photoshoots.html">Photoshoots</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Products</a></li>
+                <li class="active"><a href="administration.html">Administration</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as <b>Laura</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Preferences</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h1>Statistics</h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">Admin CP</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ol>
+            </div>
+            <div class="col-md-2">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">AdminCP Nav</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="administration.html"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> Stats</a>
+                                </li>
+                                <li>
+                                    <a href="calendar.html"><span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span> Calendar</a>
+                                </li>
+                                <li>
+                                    <a href="users.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span class="badge pull-right">3</span></a>
+                                </li>
+                                <li>
+                                    <a href="bans.html"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Ban Mgmt</a></li>
+                                <li>
+                                    <a href="marketing.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="taxes.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Tax Info</a>
+                                </li>
+                                <li class="active">
+                                    <a href="products.html"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Products <span class="badge pull-right">52</span></a>
+                                </li>
+                                <li>
+                                    <a href="workflow.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Workflow <span class="badge pull-right">249</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Products
+                            </h3>
+                        </div>
+                        <table class="table table-default table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Size</th>
+                                    <th>Quantity</th>
+                                    <th>Delivery Time</th>
+                                    <th>Company</th>
+                                    <th>Print Cost</th>
+                                    <th>Sale Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Canvas</td>
+                                    <td>20 X 30</td>
+                                    <td>1</td>
+                                    <td>7 days</td>
+                                    <td>VistaPrint</td>
+                                    <td>$20.00</td>
+                                    <td>$150.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Canvas</td>
+                                    <td>30 X 50</td>
+                                    <td>1</td>
+                                    <td>7 days</td>
+                                    <td>VistaPrint</td>
+                                    <td>$40.00</td>
+                                    <td>$250.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Canvas</td>
+                                    <td>30 X 30</td>
+                                    <td>1</td>
+                                    <td>7 days</td>
+                                    <td>VistaPrint</td>
+                                    <td>$40.00</td>
+                                    <td>$250.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Invitations</td>
+                                    <td>7 X 6</td>
+                                    <td>50</td>
+                                    <td>3 days</td>
+                                    <td>Pics - R - Us</td>
+                                    <td>$5.00</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Announcements</td>
+                                    <td>4 X 7</td>
+                                    <td>50</td>
+                                    <td>3 days</td>
+                                    <td>Prints - R - Us</td>
+                                    <td>$5.00</td>
+                                    <td>$50.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Product Sales</div>
+                    </div>
+                    <div class="panel-body">
+                        <script type="text/javascript">
+                            $(function(){
+                                $("#visitorChart").drawDoughnutChart([
+                                    { title: "Canvas 20 X 30",         	    value : 25,  color: "#2C3E50" },
+                                    { title: "Canvas 30 X 50", 			    value:  5,   color: "#FC4349" },
+                                    { title: "Canvas 30 X 30",      		value:  12,   color: "#6DBCDB" },
+                                    { title: "Invitations 7 X 6",        	value : 26,   color: "#F7E248" },
+                                    { title: "Announcements 4 X 7",          value : 22,   color: "#D7DADB" }
+                                ]);
+                            });
+                        </script>
+                        <div id="visitorChart" class="chart"></div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Printer Sales</div>
+                    </div>
+                    <div class="panel-body">
+                        <script type="text/javascript">
+                            $(function(){
+                                $("#visitorChart").drawDoughnutChart([
+                                    { title: "VistaPrint",         	    value : 25,  color: "#2C3E50" },
+                                    { title: "Prints - R - Us", 			    value:  5,   color: "#FC4349" }
+                                ]);
+                            });
+                        </script>
+                        <div id="visitorChart" class="chart"></div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">Outstanding Print Orders</div>
+                    </div>
+                    <table class="table table-default">
+                        <thead>
+                            <tr>
+                                <th>Photoshoot</th>
+                                <th>Order</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="session.html">Johnsen Newborn</a></td>
+                                <td><a href="order.html">2016-06-001</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="session.html">Smalls Family</a></td>
+                                <td><a href="order.html">2016-05-002</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container-fluid footer" role="footer">
+            <div class="col-md-12">
+                <hr>
+                <center>
+                    Copyright &copy; 2016 Site Dev Box - All Rights Reserved<br>
+                    This website has been licensed for single business use for: <b>Laura Pearl Photography</b><br>
+                    Version 0.1.0a
+                </center>
+                <hr>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
