@@ -188,65 +188,71 @@
                         </table>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">Product Sales</div>
-                    </div>
-                    <div class="panel-body">
-                        <script type="text/javascript">
-                            $(function(){
-                                $("#visitorChart").drawDoughnutChart([
-                                    { title: "Canvas 20 X 30",         	    value : 25,  color: "#2C3E50" },
-                                    { title: "Canvas 30 X 50", 			    value:  5,   color: "#FC4349" },
-                                    { title: "Canvas 30 X 30",      		value:  12,   color: "#6DBCDB" },
-                                    { title: "Invitations 7 X 6",        	value : 26,   color: "#F7E248" },
-                                    { title: "Announcements 4 X 7",          value : 22,   color: "#D7DADB" }
-                                ]);
-                            });
-                        </script>
-                        <div id="visitorChart" class="chart"></div>
-                        <div style="clear: both"></div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">Printer Sales</div>
-                    </div>
-                    <div class="panel-body">
-                        <script type="text/javascript">
-                            $(function(){
-                                $("#visitorChart").drawDoughnutChart([
-                                    { title: "VistaPrint",         	    value : 25,  color: "#2C3E50" },
-                                    { title: "Prints - R - Us", 			    value:  5,   color: "#FC4349" }
-                                ]);
-                            });
-                        </script>
-                        <div id="visitorChart" class="chart"></div>
-                        <div style="clear: both"></div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">Product Sales</div>
+                        </div>
+                        <div class="panel-body">
+                            <script type="text/javascript">
+                                $(function(){
+                                    $("#visitorChart").drawDoughnutChart([
+                                        { title: "Canvas 20 X 30",         	    value : 25,  color: "#2C3E50" },
+                                        { title: "Canvas 30 X 50", 			    value:  5,   color: "#FC4349" },
+                                        { title: "Canvas 30 X 30",      		value:  12,   color: "#6DBCDB" },
+                                        { title: "Invitations 7 X 6",        	value : 26,   color: "#F7E248" },
+                                        { title: "Announcements 4 X 7",          value : 22,   color: "#D7DADB" }
+                                    ]);
+                                });
+                            </script>
+                            <div id="visitorChart" class="chart"></div>
+                            <div style="clear: both"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title">Outstanding Print Orders</div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">Printer Sales</div>
+                        </div>
+                        <div class="panel-body">
+                            <script type="text/javascript">
+                                $(function(){
+                                    $("#visitorChart").drawDoughnutChart([
+                                        { title: "VistaPrint",         	    value : 25,  color: "#2C3E50" },
+                                        { title: "Prints - R - Us", 			    value:  5,   color: "#FC4349" }
+                                    ]);
+                                });
+                            </script>
+                            <div id="visitorChart" class="chart"></div>
+                            <div style="clear: both"></div>
+                        </div>
                     </div>
-                    <table class="table table-default">
-                        <thead>
-                            <tr>
-                                <th>Photoshoot</th>
-                                <th>Order</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="session.html">Johnsen Newborn</a></td>
-                                <td><a href="order.html">2016-06-001</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="session.html">Smalls Family</a></td>
-                                <td><a href="order.html">2016-05-002</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">Outstanding Print Orders</div>
+                        </div>
+                        <table class="table table-default">
+                            <thead>
+                                <tr>
+                                    <th>Photoshoot</th>
+                                    <th>Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="session.html">Johnsen Newborn</a></td>
+                                    <td><a href="order.html">2016-06-001</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="session.html">Smalls Family</a></td>
+                                    <td><a href="order.html">2016-05-002</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
