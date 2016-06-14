@@ -206,3 +206,7 @@ body.modal-open-noscroll {
 	margin-right: 0 !important;
 	padding-right: 0px !important;
 }
+
+.doughnutSummaryNumber {
+	z-index: -1;
+}
