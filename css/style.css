@@ -208,5 +208,10 @@ body.modal-open-noscroll {
 }
 
 .doughnutSummaryNumber {
-	z-index: -1;
+	z-index: 1;
+}
+
+.chart svg {
+	position: relative;
+	z-index: 2;
 }
