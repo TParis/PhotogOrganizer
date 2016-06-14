@@ -215,3 +215,7 @@ body.modal-open-noscroll {
 	position: relative;
 	z-index: 2;
 }
+
+.doughnutTip {
+	z-index: 3;
+}
